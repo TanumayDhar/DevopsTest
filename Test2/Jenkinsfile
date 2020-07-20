@@ -9,7 +9,7 @@ pipeline {
 		
 			steps
 			{
-				sh 'compile done'			
+				echo 'building the application ....'			
 			}
 			
 		
@@ -22,26 +22,25 @@ pipeline {
 			{
 			steps
 			{
-				sh 'Test done'			
+				echo 'Test the application...'			
 			}
 			
 		
 		
 		
-		}	
+	}	
 	
-stage('Deploy stage ')
+		stage('Deploy stage ')
 		{
 		
 			steps
 			{
-				sh 'Deploy done'			
+				echo 'Deploy the application ...'			
 			}
 			
 		
-		}
+	}
 		
-		
-	}	
+}	
 	
 	
